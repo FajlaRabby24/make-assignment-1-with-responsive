@@ -1,0 +1,18 @@
+.lorem{
+    padding: 0px 24px;
+    margin-bottom: 80px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.lorem-content{
+    border-radius: 16px;
+    background-image: url('../assets/quote-bg.png');
+    background-repeat: no-repeat;
+    padding: 24px 0 24px 0 ;
+}
+
+.lorem-content > h4{
+    margin: 24px 0 4px 0;
+}
+
