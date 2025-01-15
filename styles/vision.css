@@ -1,0 +1,80 @@
+.vision {
+    padding: 0 24px;
+    margin-bottom: 80px;
+}
+
+.vision>.des {
+    margin: 24px 0 32px 0;
+}
+
+.vision-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.vision-card {
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.vision-card h4 {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 23px 0 12px 0;
+}
+
+.vision-card button {
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 20px;
+    border: none;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.vision-card:nth-child(1) {
+    background-color: #5490F533;
+}
+
+.vision-card:nth-child(1) button {
+    background-color: #5490F5;
+}
+
+.vision-card:nth-child(2) button {
+    background-color: #09A15C;
+}
+
+.vision-card:nth-child(3) button {
+    background-color: #FFC239;
+}
+
+.vision-card:nth-child(2) {
+    background-color: #C6E4D6;
+}
+
+.vision-card:nth-child(3) {
+    background-color: #F7EBCF;
+}
+
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .vision > .title{
+        font-size: 35px;
+    }
+    .vision-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .vision-card-container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
