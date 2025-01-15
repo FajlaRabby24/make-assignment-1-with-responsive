@@ -1,0 +1,80 @@
+header{
+    margin-bottom: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 24px;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(14, 14, 14);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.sign-in button {
+    border: 1px solid rgb(0, 106, 80);
+    border-radius: 8px;
+    color: rgb(0, 106, 80);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.banner {
+    padding: 80px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C6E4D6;
+    border-radius: 24px;
+    gap: 24px;
+}
+
+.banner-content h5 {
+    color: rgba(14, 14, 14, 0.5);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.banner-content h1 {
+    color: rgb(14, 14, 14);
+    font-size: 42px;
+    font-weight: 700;
+    margin: 16px 0 24px 0;
+}
+
+.banner-content button {
+    border-radius: 8px;
+    padding: 17px 34px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    background: rgb(0, 106, 80);
+    cursor: pointer;
+}
+
+
+/* media query  */
+@media screen and (max-width: 576px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .sign-in button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    /* banner  */
+    .banner{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .banner-content h1{
+        font-size: 39px;
+    }
+}
