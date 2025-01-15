@@ -1,8 +1,13 @@
 .lorem{
     padding: 0px 24px;
     margin-bottom: 80px;
-    background-color: #fff;
+   
+}
+
+.lorem-container{
     border-radius: 16px;
+    background-color:#fff;
+    padding: 0px 24px;
 }
 
 .lorem-content{
