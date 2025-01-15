@@ -1,0 +1,135 @@
+.donate {
+    margin-bottom: 80px;
+    padding: 0 48px;
+}
+
+.donate>.title {
+    text-align: center;
+}
+
+.donate>.des {
+    text-align: center;
+    margin: 24px 0 32px 0;
+}
+
+.donate-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.donate-card {
+    padding: 35px 33px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: .1s ease;
+    cursor: pointer;
+}
+
+.donate-card:nth-child(2) {
+    background-color: #C6E4D6;
+}
+
+.donate-card:hover {
+    background-color: #C6E4D6;
+}
+
+.donate-card h1 {
+    color: rgba(14, 14, 14, 0.8);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.donate>form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.donate>form input {
+    padding: 20px 40px;
+    color: rgba(14, 14, 14);
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.donate>form input::placeholder {
+    color: rgba(14, 14, 14, 0.3);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.donate>form input:focus {
+    outline: 3px solid #C6E4D6;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+
+.donate > form .btn-container button {
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.1);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 17px 34px;
+    cursor: pointer;
+    background: #006a50;
+    margin-top: 32px;
+}
+
+/* media query  */
+@media screen and (max-width: 576px) {
+    .donate-card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .donate-card {
+        padding: 20px 22px;
+        border: 1px solid #ccc;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        transition: .1s ease;
+        cursor: pointer;
+    }
+    .donate-card h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .donate-card-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .donate-card-container{
+        gap: 15px;
+    }
+    .donate-card {
+        padding:6px 3px;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        transition: .1s ease;
+        cursor: pointer;
+    }
+    .donate-card h1 {
+        font-size: 20px;
+    }
+}
